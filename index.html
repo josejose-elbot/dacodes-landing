@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DaCodes | Ethereal Precision in Code</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#340090",
+                        "secondary-container": "#006875",
+                        "primary-fixed": "#a98fff",
+                        "tertiary": "#ff96bb",
+                        "on-secondary-fixed-variant": "#005964",
+                        "error-container": "#a70138",
+                        "secondary-dim": "#00d4ec",
+                        "surface-container-low": "#131314",
+                        "primary-fixed-dim": "#9c7eff",
+                        "on-primary-container": "#280072",
+                        "secondary-fixed-dim": "#00d7f0",
+                        "surface-container-highest": "#262627",
+                        "secondary": "#00e3fd",
+                        "primary": "#b6a0ff",
+                        "tertiary-container": "#fb81ae",
+                        "on-secondary-fixed": "#003a42",
+                        "error": "#ff6e84",
+                        "primary-container": "#a98fff",
+                        "on-surface-variant": "#adaaab",
+                        "on-error-container": "#ffb2b9",
+                        "inverse-on-surface": "#565556",
+                        "surface-dim": "#0e0e0f",
+                        "on-tertiary": "#690939",
+                        "inverse-surface": "#fcf8f9",
+                        "surface-container": "#19191b",
+                        "surface-container-lowest": "#000000",
+                        "on-secondary-container": "#e8fbff",
+                        "tertiary-dim": "#ee77a3",
+                        "inverse-primary": "#6834eb",
+                        "outline": "#767576",
+                        "on-surface": "#ffffff",
+                        "surface": "#0e0e0f",
+                        "tertiary-fixed": "#ff8db6",
+                        "on-primary-fixed": "#000000",
+                        "on-tertiary-fixed": "#37001a",
+                        "primary-dim": "#7e51ff",
+                        "surface-variant": "#262627",
+                        "tertiary-fixed-dim": "#f57ca9",
+                        "outline-variant": "#484849",
+                        "error-dim": "#d73357",
+                        "on-tertiary-fixed-variant": "#70103e",
+                        "on-error": "#490013",
+                        "background": "#0e0e0f",
+                        "surface-tint": "#b6a0ff",
+                        "surface-bright": "#2c2c2d",
+                        "on-background": "#ffffff",
+                        "on-primary-fixed-variant": "#32008a",
+                        "on-tertiary-container": "#59002e",
+                        "surface-container-high": "#201f21",
+                        "secondary-fixed": "#26e6ff",
+                        "on-secondary": "#004d57"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "display": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #0e0e0f; color: #ffffff; }
+        .ease-out-expo { transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+        .glass-panel { backdrop-filter: blur(20px); background: rgba(25, 25, 27, 0.6); }
+        .gradient-text { background: linear-gradient(135deg, #b6a0ff 0%, #00e3fd 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(182, 160, 255, 0.05) 0%, rgba(14, 14, 15, 0) 70%); }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e0f]/80 backdrop-blur-xl no-line tonal-shift-surface">
+<div class="flex justify-between items-center px-8 h-20 w-full max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-white">DaCodes</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-inter tracking-tight text-sm uppercase text-[#00e3fd] border-b border-[#00e3fd] pb-1 hover:text-white transition-all duration-300 ease-out-expo scale-95 active:scale-90" href="#">Services</a>
+<a class="font-inter tracking-tight text-sm uppercase text-slate-400 hover:text-white transition-all duration-300 ease-out-expo scale-95 active:scale-90" href="#">Portfolio</a>
+<a class="font-inter tracking-tight text-sm uppercase text-slate-400 hover:text-white transition-all duration-300 ease-out-expo scale-95 active:scale-90" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/10">
+                Get Started
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 overflow-hidden hero-gradient">
+<div class="absolute inset-0 z-0 opacity-20" data-alt="Abstract geometric grid pattern with subtle neon lines on a deep black background representing digital connectivity" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0fj6BvcjqJNMoNi0poECtumnp1W7MtTVNXRqjSGCHC62dJdUeJHLqMnlFwoG4zkP4zrkB7QTPCXf_InbOAMusttkvK4u4WcAVj8bADffojUkMwmMcVa_akRtnlnp1teXs1qYcdMyjfV8aiuAe0ylL-zZTOl9SCdwZnlyBXqBAl0AYo23UXBYxIwz7n9EBpybLbBQVuE8LcVHSJip7diRtkxMHmOeUhagzv3D8YIIT344qOghrL706ujYXVKswGFRGGtwAtJtNFqM'); background-size: 80px 80px;"></div>
+<div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 z-10">
+<div class="md:col-span-8">
+<h1 class="text-[3.5rem] md:text-[5.5rem] font-black leading-[0.95] tracking-tighter mb-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+                        WE BUILD THE <br/>
+<span class="gradient-text">FUTURE OF SOFTWARE</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl font-light leading-relaxed mb-10">
+                        Engineering bespoke digital solutions for world-class enterprises. We transform complex logic into ethereal user experiences through architectural precision and creative mastery.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-10 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all active:scale-95">
+                            Get Started
+                        </button>
+<button class="border border-secondary/30 text-secondary px-10 py-4 rounded-full font-bold text-lg hover:bg-secondary/10 transition-all backdrop-blur-sm">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+</div>
+<!-- Floating Decorative Element -->
+<div class="hidden lg:block absolute right-[10%] top-[30%] w-64 h-64 rounded-full bg-primary/10 blur-[100px]"></div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-xs">Our Expertise</span>
+<h2 class="text-4xl md:text-5xl font-black mt-4">CORE SERVICES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="group p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-primary/30 transition-all duration-500">
+<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">developer_mode_tv</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Custom Software</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Tailor-made applications built with performance and scalability as the cornerstone of every line of code.
+                        </p>
+</div>
+<!-- Service Card 2 -->
+<div class="group p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-secondary/30 transition-all duration-500">
+<div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">cloud_done</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Cloud Architecture</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Robust cloud infrastructures designed for high availability, zero-downtime, and global distribution.
+                        </p>
+</div>
+<!-- Service Card 3 -->
+<div class="group p-8 rounded-lg bg-surface-container-high border border-outline-variant/10 hover:border-tertiary/30 transition-all duration-500">
+<div class="w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">transform</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Digital Transformation</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Modernizing legacy systems into agile, data-driven ecosystems that dominate the competitive landscape.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-32 px-6 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs">Selected Works</span>
+<h2 class="text-4xl md:text-6xl font-black mt-4">ENGINEERING SUCCESS</h2>
+</div>
+<a class="group flex items-center gap-2 text-on-surface-variant hover:text-white transition-colors" href="#">
+                        Explore all cases <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<div class="md:col-span-8 relative rounded-lg overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist dark fintech app dashboard showing clean glassmorphism charts and glowing currency symbols in deep purple and cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXI-kyDC7eJDgymld65WIF8uFRkORygMNCztZbjLRSW8oEJHSNXYKvG78rS_Vjjbs1pmEKrPRavH2uCA62jGLuWbJ21nGryFpkU5QMd1Ml7sWkEqspcE5PTxLOmT6KEAq89qv2GYXKldcIcreGyoeuRr0C1OazmT3mL-Q1lyNew_xudzD2_7c0jN4cX9uOO2LNwO1zO8Ub-DDiSPf-COwbyxm6eIgGe5YESv11cZ37n5v0u5cJuyQJy0521d2XNw-8jpnDy6iezEI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-10">
+<h4 class="text-3xl font-bold mb-2">Fintech Revolution</h4>
+<p class="text-on-surface-variant">Global payments re-imagined for the digital age.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-lg overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Industrial data visualization dashboard on a high-end tablet screen with dramatic lighting in a modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB8I_GjmRoj7hTTZJV_FoI0DZsJwgD03TkFJL2-jXMz3Y1_XwJp_CjJGThbjiuTgIfsrDvh-ekDEw32C7hIsSRJwbEvv-UeVgJ4DYV1SZXIPhc2W2zeAOmBFCPV2svZ69ArSh6gxix1ByfLuXnSo4DyMPXSwSuSzD2eaEBqogG5wwLK3sRqDqdgMijyHXvh-vWpJ0TSO7JHWigtP9R2ogepNyneg55R7ozzgRsCiqVEgop5OXrgizaNhKoDXr9PVOi8nZXoWPFUQk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<h4 class="text-2xl font-bold mb-2">Enterprise Efficiency</h4>
+<p class="text-on-surface-variant">AI-driven logistics optimization.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-lg overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious mobile e-commerce interface showcasing high-end fashion with smooth transitions and elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7a293DIcCR7SeoZ_glBMPd3BMReMJVb1yoiaXqQvg--iwqM0LsCosLjoiyqld_7exWlgn1311t2lIZe_5A92Z2wWTTEDMMsPvocaMeD-REziHkyvqhI6vUKFXHb95m46dL9Jp5svBfkFtaslEuz2pG9LrpkUCYivEB8zr9N7VKP7zO25oVae3RLwgrWI_JNb7hWbgfcEaEhLelfKDWvXQLfVJ1g2uopTkkHAmP0RwcMK1ckdAuJU4JEcoaoX0gDL06Ihd-fcqHYM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<h4 class="text-2xl font-bold mb-2">Neo-Retail</h4>
+<p class="text-on-surface-variant">Next-gen shopping experience.</p>
+</div>
+</div>
+<div class="md:col-span-8 relative rounded-lg overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek health tracking application displaying biometric data with soft pink and purple glowing accents on a dark UI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-LxinMBJyzb7cCjRW6wck-y3bLSHdTPsRXFGWucJGkquX3AXB5UnaAEsL61bf3ef7Vi3GdacdIFF-_uyzeMGGT-FT4ojHoQMHTy1qqNppn3YJkn1z81I3gczvlMS-8A5XHLrbZEqitZJsg6-obmCY3l4WxzZ2j4PKHcPo9FnoPPAFsLyoqrQGyLgmg8FSSDo4j_5XnyxCdNDFHWVGOra5aY0jGfRBJmY-UMhD5SZsC_6Jp7j9hTRByYQnypMHuboI78dKFPUTIFI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-10">
+<h4 class="text-3xl font-bold mb-2">Wellness Core</h4>
+<p class="text-on-surface-variant">Personalized health insights at scale.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<p class="text-on-surface-variant font-medium uppercase tracking-widest text-sm mb-12">Trusted by visionary industry leaders</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all">
+<div class="h-8 w-32 bg-on-surface/20 rounded"></div>
+<div class="h-8 w-24 bg-on-surface/20 rounded"></div>
+<div class="h-8 w-40 bg-on-surface/20 rounded"></div>
+<div class="h-8 w-28 bg-on-surface/20 rounded"></div>
+</div>
+</div>
+<div class="mt-32 max-w-4xl mx-auto">
+<div class="relative p-12 rounded-lg bg-surface-container flex flex-col md:flex-row gap-10 items-center">
+<div class="absolute -top-6 -left-6 w-16 h-16 bg-primary/20 rounded-full blur-xl"></div>
+<div class="w-32 h-32 rounded-full overflow-hidden shrink-0 border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="Portrait of a professional tech executive with a confident smile in a modern glass-walled office environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQzw1FGaOTjHhZCRvrVwMZgCjbUqAvPyajf9F-ylSpb67dVF-4shfN5iq0ERG2DudckpLf8-faowVoHh2UMvYXRoKEl_rlw_tF36KmxickoYnujlDiQ71HC9t6ikESBqChZ-dgUEMlIxIkZBdsw7IcwPL6Hj3mPLwZqX8yBWi8B_rpNlPmiXsJSfe0a9QfAsYvkAB6JBqEYJttHrj-eqmGGBQ09V3rqxms08E-WsAG9grdONoyIFqYBDrfHcYRGWEEbGI2eYPQX0M"/>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">format_quote</span>
+<p class="text-xl md:text-2xl font-light italic leading-relaxed mb-6">
+                                "DaCodes didn't just build us an app; they architected a future-proof foundation that allowed us to scale 10x in less than a year. Their precision is unmatched."
+                            </p>
+<div>
+<h5 class="font-bold text-lg">Alex Rivera</h5>
+<p class="text-secondary text-sm">CTO at VentureGlobal</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-40 px-6 bg-background relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 blur-[120px] -z-10 translate-y-1/2"></div>
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl md:text-7xl font-black mb-8 leading-none">READY TO START YOUR <br/><span class="gradient-text">TRANSFORMATION?</span></h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-xl mx-auto font-light">
+                    Book a strategy session with our senior architects and discover the untapped potential of your digital ecosystem.
+                </p>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-12 py-5 rounded-full font-bold text-xl hover:opacity-90 transition-all active:scale-95 shadow-2xl shadow-primary/20">
+                    Book a Consultation
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131314] w-full py-16 px-8 tonal-shift-from-background">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-bold text-white mb-4">DaCodes</div>
+<p class="font-inter text-xs tracking-wide text-slate-500 leading-relaxed">
+                    © 2024 DaCodes. Ethereal Precision in Code. Transforming the digital landscape one pixel at a time.
+                </p>
+</div>
+<div>
+<h6 class="text-white font-bold text-sm mb-6">Explore</h6>
+<ul class="space-y-4">
+<li><a class="font-inter text-xs tracking-wide text-slate-500 hover:text-[#00e3fd] transition-colors ease-out-expo" href="#">Services</a></li>
+<li><a class="font-inter text-xs tracking-wide text-slate-500 hover:text-[#00e3fd] transition-colors ease-out-expo" href="#">Portfolio</a></li>
+<li><a class="font-inter text-xs tracking-wide text-slate-500 hover:text-[#00e3fd] transition-colors ease-out-expo" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold text-sm mb-6">Legal</h6>
+<ul class="space-y-4">
+<li><a class="font-inter text-xs tracking-wide text-slate-500 hover:text-[#00e3fd] transition-colors ease-out-expo" href="#">Privacy Policy</a></li>
+<li><a class="font-inter text-xs tracking-wide text-slate-500 hover:text-[#00e3fd] transition-colors ease-out-expo" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold text-sm mb-6">Newsletter</h6>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 text-xs focus:ring-1 focus:ring-secondary text-white outline-none" placeholder="Email address" type="email"/>
+<button class="absolute right-2 top-1.5 p-1.5 text-secondary">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
